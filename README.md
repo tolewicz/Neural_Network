@@ -12,19 +12,27 @@ Develop the model that predicts if non-profit organization is successful
 
 ### Results 
 #### Data processing
-•	Charity organization data was examined for repetition and prepared for processing
+*	Charity organization data was examined for repetition and prepared for processing
 * After confirming that there is no repetition in organization name and EIN, the column EIN was dropped and name was set as dataframe index
-•	The columns with object data was converted into numerical data
+*	The columns with object data was converted into numerical data
 * The data with more than 10 unique values was backed into class "Other"
-* The threshold of "Other" class was determined by analyzing data distribution using hvplot
+* The threshold of "Other" class was determined by analyzing density and data distribution using hvplot
 
 
 <p align="center">
-<img src="https://github.com/tolewicz/Cryptocurrencies/blob/master/Images/Elbow.JPG" width="450" height= "200">
+<img src="https://github.com/tolewicz/Neural_Network/blob/master/Fig/density.JPG" width="450" height= "200">
+</p>
+
+<p align="center">
+<img src="https://github.com/tolewicz/Neural_Network/blob/master/Fig/bar.JPG" width="450" height= "200">
 </p>
 
 * Afterwards the data was normalized by using Standard Scaler
-•	After pre processing the data, for additional visualization the data was converted into primary components PC1,PC2 and plotted to get an idea about potential class distribution. However 2D and 3D plots did not show any obvious clusters
+*	After pre processing the data, for additional visualization the data was converted into primary components PC1,PC2 and plotted to get an idea about potential class distribution. However 2D and 3D plots did not show any obvious clusters
+
+<p align="center">
+<img src="https://github.com/tolewicz/Neural_Network/blob/master/Fig/PC.JPG" width="450" height= "200">
+</p>
 
 #### Model
 
